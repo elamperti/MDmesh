@@ -8,13 +8,13 @@ This tool uses ([markdown2](https://github.com/trentm/python-markdown2)).
 I made an automatic installer you can run just after you clone it: `setup.sh`. For manual installation take a look at the file.
 
 ## Usage
-`python mdmesh.py --help` :P
+For quick reference: `python mdmesh.py --help`
 
 ## ToDo
-  * Create an internal document queue
-  * Follow MarkDown links to other documents
-  * Embed CSS into HTML file so it's portable
+  * ~~Create an internal document queue~~ Make a better document queue
+  * Allow linking to other documents using absolute paths
   * Add argument to use a custom template
+  * Add to this readme how to use the tool
 
 ## Credits and license
 This tool was created by Enrico Lamperti and its distributed under the MIT license.
