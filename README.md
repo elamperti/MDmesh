@@ -11,14 +11,10 @@ I made an automatic installer you can run just after you clone it: `setup.sh`. F
 `python mdmesh.py --help` :P
 
 ## ToDo
-[x] Make the code pretty
-[x] Add HTML template
-[x] Support arguments
-[x] Make output flexible (choose name and/or format (`.md` or `.html`))
-[ ] Create an internal document queue
-[ ] Follow MarkDown links to other documents
-[ ] Embed CSS into HTML file so it's portable
-[ ] Add argument to use a custom template
+  * Create an internal document queue
+  * Follow MarkDown links to other documents
+  * Embed CSS into HTML file so it's portable
+  * Add argument to use a custom template
 
 ## Credits and license
 This tool was created by Enrico Lamperti and its distributed under the MIT license.
