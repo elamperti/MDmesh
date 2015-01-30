@@ -16,7 +16,6 @@ class FileQueue(object):
     def add(self, file_path, file_pointer=None):
         for item in self.queue:
             if item[0] == file_path:
-                print (file_path + " ALREADY EXISTS")
                 return # Already on queue
 
         if not file_pointer:
@@ -81,16 +80,8 @@ if __name__ == '__main__':
     md_mesh = ""
     while file_queue.has_items():
         (path, md_file) = file_queue.get()
-        print ("READING " + path)
         if args.use_separators and md_mesh:
             md_mesh += "\n\n---\n\n"
-
-        if not md_file:
-            # If the file was found following links there's no file pointer yet
-            try:
-                md_file = open(path, 'r')
-            except: # FIXME
-                print("Reference not found: " + path)
 
         new_file = md_file.read()
         md_file.close()
@@ -110,7 +101,6 @@ if __name__ == '__main__':
 
     if args.create_md:
         md_output = open(md_path, 'w')
-        print (os.path.abspath(md_output.name))
         md_output.write(md_mesh)
         md_output.close()
 
